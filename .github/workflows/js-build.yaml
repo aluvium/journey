@@ -22,6 +22,9 @@ jobs:
         cache: 'npm'   
     - run: npm ci
     - run: npm run build --if-present
+    - run: npm test
     - run: | 
-        npm test
-        curl ./index.html
+        npm start -- --port 8558 
+        curl localhost:8558
+        npm stop
+        
