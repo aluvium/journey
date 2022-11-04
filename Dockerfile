@@ -2,7 +2,6 @@ FROM node:19
 COPY . /app
 WORKDIR /app
 RUN set -eux; \
-    npm init -y; \
     npm install reveal.js;
 EXPOSE 8002
 CMD ls 
