@@ -2,7 +2,7 @@ FROM node:19
 COPY . /app
 WORKDIR /app
 RUN set -eux; \
-    npm install reveal.js /app;
-EXPOSE 8002
-CMD pwd && ls -R1
-#CMD  npm start -- --port 8002 --host origin
+    npm ci; \
+    npm run build; \
+    npm test ;
+CMD npm start -- --port 8008 --host origin
