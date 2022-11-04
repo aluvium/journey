@@ -1,0 +1,22 @@
+{
+  "name": "journey",
+  "version": "1.0.0",
+  "description": "picture-story",
+  "main": "index.js",
+  "scripts": {
+    "test": "pwd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aluvium/journey.git"
+  },
+  "keywords": [
+    "picture-story"
+  ],
+  "author": "Aluvium",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aluvium/journey/issues"
+  },
+  "homepage": "https://github.com/aluvium/journey#readme"
+}
