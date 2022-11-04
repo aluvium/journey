@@ -13,9 +13,9 @@
     "build": "gulp build"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "https://hakim.se"
+    "name": "Aluvium",
+    "email": " ",
+    "web": " "
   },
   "repository": {
     "type": "git",
@@ -25,9 +25,9 @@
     "node": ">=10.0.0"
   },
   "keywords": [
-    "reveal",
-    "slides",
-    "presentation"
+    "pictures",
+    "story",
+    "portfolio"
   ],
   "devDependencies": {
     "@babel/core": "^7.14.3",
