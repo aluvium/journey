@@ -22,7 +22,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    need: "build-js"
+    needs: build-js
     strategy:
       matrix:
         node-version: [16.x, 18.x, 19.x]
