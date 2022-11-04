@@ -1,5 +1,5 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-name: node-js-build
+name: "node-js-build"
 on:
   workflow_dispatch:
   push:
@@ -8,7 +8,7 @@ on:
     branches: [ "s1" ]
 
 jobs:
-  build:
+  build-js:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -21,8 +21,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'   
     - run: npm ci
+    - run: npm audit fix
     - run: npm run build --if-present
-    - run: npm test
-    - run: | 
-        npm start -- --port 8558 &
-        curl localhost:8558    
+    - run: npm test 
