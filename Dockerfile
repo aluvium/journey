@@ -4,5 +4,5 @@ WORKDIR /app
 RUN set -eux; \
     npm install reveal.js /app;
 EXPOSE 8002
-CMD ls 
+CMD pwd && ls -R1
 #CMD  npm start -- --port 8002 --host origin
