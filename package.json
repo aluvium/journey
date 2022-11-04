@@ -1,11 +1,11 @@
 {
-  "name": "reveal.js",
+  "name": "journey",
   "version": "4.4.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "https://revealjs.com",
-  "subdomain": "revealjs",
-  "main": "dist/reveal.js",
-  "module": "dist/reveal.esm.js",
+  "description": "Picture Story",
+  "homepage": " ",
+  "subdomain": " ",
+  "main": " ",
+  "module": " ",
   "license": "MIT",
   "scripts": {
     "test": "gulp test",
@@ -19,10 +19,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "https://github.com/aluvium/journey.git"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=14.0.0"
   },
   "keywords": [
     "pictures",
