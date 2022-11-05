@@ -35,7 +35,6 @@ jobs:
     - uses: actions/download-artifact@v3
       with:
         name: artifact
-        paths: .
     - name: "npm install & test"
       run: | 
         npm install
