@@ -1,0 +1,25 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+name: "node-js-build and create artifact"
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "s1" ]
+  pull_request:
+    branches: [ "s1" ]
+
+jobs:
+  build-js:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 19.x]
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'   
+    - run: npm ci
+    - run: npm run build
+    - run: npm test 
